@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#container-calc {
+    width: 400px;
+    padding: .5em;
+    background-color: #1e2122;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+}
+
+#hamburguer {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50px;
+}
+
+#hamburguer:hover {
+    background-color: #7979794f;
+}
+
+#textDefault {
+    font-size: 1.4em;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previous-operation {
+    color: #d3d3d3;
+    min-height: 1.6em;
+    padding: .2em;
+    margin-right: 10px;
+    overflow-wrap: break-word;
+}
+
+#current-operation {
+    font-size: 3em;
+    min-height: 1.6em;
+    padding: .2em;
+    overflow-wrap: break-word;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#delete-d {
+    /* display: none; */
+    position: absolute;
+    z-index: -10;
+}
+
+#delete-img {
+    width: 20px;
+    height: auto;
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    height: 4em;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #313233;
+    color: #fff;
+}
+
+#buttons-container button:hover {
+    background-color: #262727;
+}
+
+#buttons-container .number {
+    background-color: #3a3b3c;
+}
+
+#buttons-container .number:hover {
+    background-color: #2d2e2e;
+}
+
+
+#buttons-container #equals {
+    background-color: #45e532;
+    color: #313233;
+}
+
+#buttons-container #equals:hover {
+    background-color: #36b828ec;
+
+}
